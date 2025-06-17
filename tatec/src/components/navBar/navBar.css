@@ -1,0 +1,84 @@
+a {
+    text-decoration: none;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapsible__content.collapsible--expanded {
+    max-height: 100%;
+    opacity: 1;
+}
+
+
+.nav {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}
+.nav__logo {
+    width: 6rem;
+    /* border: 1px solid red; */
+}
+.nav__image {
+    /* border: 1px solid red; */
+    width: 6rem;
+}
+.nav__image:hover{
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+.nav__list {
+    width: 100%;
+    margin: 0;
+}
+.nav__item {
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #222;
+
+}
+.nav__item > a {
+    color: #d2d0db;
+    transition: color .3s;
+}
+
+.nav__item > a:hover {
+    color: #fff;
+}
+.nav__toggler {
+    opacity: 0.5;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .nav__image {
+        display: none;
+    }
+    .collapsible__content {
+        max-height: 100%;
+        opacity: 1;
+    }
+    .nav__list {
+        display: flex;
+        width: auto;
+
+    }
+    .nav__item {
+        border: 0;
+        
+    }
+}
