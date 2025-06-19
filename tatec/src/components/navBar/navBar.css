@@ -38,6 +38,7 @@ a {
 
 .list {
     list-style: none;
+    padding: 0;
 }
 .nav__list {
     width: 100%;
@@ -79,6 +80,7 @@ a {
     }
     .nav__item {
         border: 0;
+        padding-left: 4rem;
         
     }
 }

@@ -6,7 +6,6 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
-  --border-radius: 30px;
 }
 
 ::selection {
@@ -31,6 +30,7 @@ body{
   color: var(--color-body);
   line-height: 1.5;
   font-size: 2.4rem;
+  margin: 0;
 }
 
 h1,
