@@ -20,6 +20,8 @@
 }
 .block__header {
     text-align: center;
+    justify-self: center;
+    align-self: center;
     margin-bottom: 4rem;
 }
 
@@ -39,6 +41,10 @@
     background: rgb(255, 52, 0);
     color: #fff;
 }
+.btn--accent:hover {
+    background: rgb(190, 103, 83);
+    color: #b9c3cf;
+}
 .btn {
     text-transform: uppercase;
     border-radius: 40px;
@@ -52,4 +58,32 @@
 .btn--stretched {
     padding-left: 6rem;
     padding-right: 6rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+.hero__btn {
+    display: grid;
+}
+
+.btn--white {
+    color: #fff;
+}
+.btn--white:hover {
+    color: #b9c3cf;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero__btn {
+        display: flex;
+    }
+    .hero__second-btn {
+        font-weight: 300;
+    }
+    
 }
